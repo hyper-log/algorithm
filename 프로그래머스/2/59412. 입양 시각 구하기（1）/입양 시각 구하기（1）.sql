@@ -1,0 +1,5 @@
+SELECT HOUR(datetime) as HOUR,  count(animal_id) as COUNT
+FROM ANIMAL_OUTS
+GROUP BY HOUR(datetime)
+HAVING 8 < HOUR AND HOUR < 20 
+ORDER BY HOUR
