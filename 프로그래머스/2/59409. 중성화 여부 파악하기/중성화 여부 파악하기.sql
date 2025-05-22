@@ -1,6 +1,9 @@
--- 코드를 입력하세요
-SELECT ANIMAL_ID, NAME, 
-case WHEN (SEX_UPON_INTAKE like 'Neutered%') then 'O'
-WHEN (SEX_UPON_INTAKE like 'Spayed%') then 'O' else 'X' END as 중성화
+/** 2회차 **/
+SELECT 
+    ANIMAL_ID, NAME,
+    CASE
+        WHEN SEX_UPON_INTAKE LIKE 'Neutered%' THEN 'O'
+        WHEN SEX_UPON_INTAKE LIKE 'Spayed%' THEN 'O'
+        ELSE 'X' END as 중성화
 FROM ANIMAL_INS
-order by ANIMAL_ID
+ORDER BY ANIMAL_ID ASC
