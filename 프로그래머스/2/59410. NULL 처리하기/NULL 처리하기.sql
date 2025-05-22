@@ -1,7 +1,9 @@
--- 코드를 입력하세요
-SELECT animal_type, 
-CASE 
-    WHEN name IS NULL then 'No name'
-    WHEN name IS NOT NULL then name END as name, 
-SEX_UPON_INTAKE
-from animal_ins
+/** 2회차 **/
+SELECT 
+    ANIMAL_TYPE, 
+    CASE 
+        WHEN NAME IS NULL THEN 'No name'
+        ELSE NAME END,
+    SEX_UPON_INTAKE
+FROM ANIMAL_INS
+ORDER BY ANIMAL_ID ASC
