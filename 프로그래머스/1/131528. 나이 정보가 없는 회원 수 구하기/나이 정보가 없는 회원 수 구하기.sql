@@ -1,5 +1,4 @@
--- 코드를 입력하세요
-SELECT count(user_id) as USERS
-from user_info
-where AGE is null
-group by AGE
+/** 2회차 **/
+SELECT COUNT(USER_ID)
+FROM USER_INFO
+WHERE AGE IS NULL
