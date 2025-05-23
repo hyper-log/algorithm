@@ -1,3 +1,4 @@
-select *
-FROM Food_product
-where price = (select max(price) from food_product)
+/** 2회차 **/
+SELECT PRODUCT_ID, PRODUCT_NAME, PRODUCT_CD, CATEGORY, PRICE
+FROM FOOD_PRODUCT
+WHERE PRICE = (SELECT MAX(PRICE) FROM FOOD_PRODUCT)
